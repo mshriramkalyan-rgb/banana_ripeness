@@ -1,12 +1,8 @@
 let model;
 
 async function loadModel() {
-    try {
-        model = await tf.loadLayersModel('model/model.json');
-        console.log("✅ Model Loaded");
-    } catch(error) {
-        console.error("❌ Model Load Failed:", error);
-    }
+    model = await tf.loadLayersModel('model/model.json');
+    console.log("Model Loaded");
 }
 
 loadModel();
@@ -27,6 +23,7 @@ document.getElementById("imageUpload")
 });
 
 async function predictFruit() {
+alert("Predict");
     const image =
       document.getElementById("preview");
 
