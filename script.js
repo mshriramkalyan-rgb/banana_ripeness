@@ -27,7 +27,6 @@ document.getElementById("imageUpload")
 });
 
 async function predictFruit() {
-alert("Predict");
     const image =
       document.getElementById("preview");
 
